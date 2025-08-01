@@ -1,9 +1,16 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-  output: 'export',
-  distDir: 'dist',
-  basePath: '',
-  assetPrefix: 'https://majo-delatorre.github.io/', // tu URL de GitHub Pages
-};
-
-module.exports = nextConfig;
+ 
+  // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
+  // trailingSlash: true,
+ 
+  // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
+  // skipTrailingSlashRedirect: true,
+ 
+  // Optional: Change the output directory `out` -> `dist`
+  // distDir: 'dist',
+}
+ 
+module.exports = nextConfig
